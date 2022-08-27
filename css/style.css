@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+body{
+    font-family: Monaco;
+    background-color: #034f84;
+
+}
+
+.weather-app {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: auto;
+    margin: 50px;
+    color: #92a8d1;
+}
+
+.heading{
+    font-size: 50px;
+}
+
+.weather-app__detect{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.random-detect__input {
+    border: none;
+    border-bottom: 3px solid #fff;
+    width: 300px;
+    background: none;
+    color: #92a8d1;
+    padding: 10px 15px;
+    font-size: 20px;
+}
+
+.random-detect__input:focus{
+    outline: none;
+}
+
+.random-detect__input::placeholder{
+    color: #92a8d1;
+}
+
+.random__detect-message{
+    font-size: 13px;
+    margin: 5px;
+}
+
+.random__detect-message-hidden{
+    display: none;
+}
+
+.button {
+    cursor: pointer;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    margin: 10px;
+    width: 130px;
+    border: none;
+    border-radius: 5px;
+    background-color: #c94c4c;
+    color: #deeaee;
+}
+
+.auto-detect__button:disabled{
+    background-color: #f7cac9;
+}
+
+.weather-app__cities{
+    list-style: none;
+    display: grid;
+    grid-gap: 32px 20px;
+    grid-template-columns: repeat(4, 180px);
+    margin-top: 20px;
+}
+
+.city-card{
+    border-radius: 5px;
+    background-color: #deeaee;
+    padding: 15px 10px;
+    color: #034f84;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 5px 10px #92a8d1;
+    ;
+}
+
+.city-name sup {
+    font-size: 15px;
+    color: #c94c4c;
+}
+
+.city-icon {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.city-description{
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 1000px) { 
+    .weather-app__cities {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+   
+@media screen and (max-width: 700px) {
+    .weather-app__cities {
+      grid-template-columns: repeat(2, 1fr);
+    }
+}
+   
+@media screen and (max-width: 500px) {  
+    .weather-app__cities {
+      grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
