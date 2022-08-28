@@ -1,7 +1,7 @@
 # weather-widget
 
 ## Summary
-This project I bult while studying advanced JavaScript
+This project I built while studying advanced JavaScript
 
 This weather widget whows the weather by your geolocation or by search
 
